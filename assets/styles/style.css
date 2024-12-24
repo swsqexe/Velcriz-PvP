@@ -199,10 +199,6 @@ textarea {
     *vertical-align: middle;
 }
 button,
-input {
-    line-height: normal;
-}
-button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -301,6 +297,7 @@ nav {
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
+    position: relative;
 }
 
 @media only screen and (max-width: 786px) {
@@ -333,33 +330,4 @@ nav a {
 nav a:hover {
     box-shadow: none;
     transform: translateY(5px);
-}
-
-/* IP Button Style */
-#copyIpButton {
-    background-color: transparent;
-    border: solid gray 1px;
-    padding: 0.75rem 3rem;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: white;
-    font-size: larger;
-    margin-bottom: 0.5rem;
-    transition: all 0.1s;
-    cursor: pointer;
-}
-
-#copyIpButton:hover {
-    background-color: var(--copy-ip-hover);
-}
-
-#copyIpButton:active {
-    background-color: var(--copy-ip-click);
-}
-
-#ipText {
-    font-weight: bold;
-    font-size: 1.2rem;
 }
