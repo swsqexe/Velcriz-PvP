@@ -73,14 +73,17 @@
         </main>
         <script>
             function copyIp() {
-                navigator.clipboard
-                    .writeText("play.velcriz.xyz")
-                    .catch((error) => {
-                        console.error(
-                            `Failed to copy "${text}" to clipboard: ${error}`
-                        );
-                    });
-            }
+    const ip = "play.velcriz.xyz";  // This should be the IP you want to copy
+    navigator.clipboard.writeText(ip)
+        .then(() => {
+            console.log("IP copied to clipboard!");
+            alert("IP copied: " + ip);  // Optional: Add an alert to show the user the IP was copied
+        })
+        .catch((error) => {
+            console.error("Failed to copy IP:", error);
+        });
+}
+
         </script>
     </body>
 </html>
